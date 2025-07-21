@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>FlyConnect Global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f0faff, #e2f0ff);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #002244, #003366);
+      padding: 60px 20px 40px;
+      text-align: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .animated-title-wrapper {
+      overflow: hidden;
+      width: 100%;
+      height: 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .animated-title {
+      position: absolute;
+      white-space: nowrap;
+      font-size: 28px;
+      font-weight: bold;
+      animation: scrollText 15s linear infinite;
+    }
+    @keyframes scrollText {
+      0% { left: 100%; }
+      100% { left: -100%; }
+    }
+    .menu-toggle {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: none;
+      z-index: 2;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 12px;
+      z-index: 1;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #002a66;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+      }
+      nav.show {
+        display: flex;
+      }
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #002244;
+      margin-top: 40px;
+    }
+    img {
+      width: 100%;
+      max-width: 600px;
+      display: block;
+      margin: 10px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    }
+    .description {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .moving-plane, .moving-car {
+      width: 80px;
+      position: absolute;
+    }
+    .moving-plane {
+      top: 300px;
+      animation: flyUp 6s linear infinite;
+    }
+    @keyframes flyUp {
+      0% { left: -100px; top: 500px; }
+      100% { left: 100%; top: 100px; }
+    }
+    .moving-car {
+      bottom: 50px;
+      animation: drive 12s linear infinite;
+    }
+    @keyframes drive {
+      0% { left: -100px; }
+      100% { left: 100%; }
+    }
+    .button-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .button-section a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 24px;
+      background: #003366;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-links {
+      margin-top: 30px;
+      text-align: center;
+    }
+    .footer-links a {
+      color: white;
+      text-decoration: underline;
+      margin: 0 8px;
+    }
+    footer {
+      background: #002a66;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 15px;
+    }
+    .translate-button {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 10px;
+      background: #003366;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 14px;
+      z-index: 3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="animated-title-wrapper">
+      <div class="animated-title">FlyConnect Global – Worldwide Flight Booking, Visas, Private Jets, Airport Cars & More</div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa & FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>  <section>
+    <h2>Private Jets & Luxury Aircraft</h2>
+    <div class="description">Book premium private jets for VIP travel worldwide. Fly in comfort and style, on your schedule.</div>
+    <img src="https://i.postimg.cc/26wMb33N/ae8c155d2215c6c3ac790beecfb9dfbe.jpg" alt="Private Jet on runway"><h2>Airport Transfers with Chauffeur Cars</h2>
+<div class="description">Luxury cars await you at your arrival airport, ready to take you to your destination with elegance and comfort.</div>
+<img src="https://i.postimg.cc/fyjM2MHw/6d4a47c5906774bdbd3d4140bf3ccbd5.jpg" alt="Luxury car at airport">
+
+<h2>Global Airport Network</h2>
+<div class="description">We operate across all major international airports. Your destination is never out of reach with FlyConnect Global.</div>
+<img src="https://i.postimg.cc/Cx2q044W/8c3ffbf4846530b872938c7d013e3d08.jpg" alt="Large international airport">
+
+<h2>Fast, Reliable Booking for Loved Ones</h2>
+<div class="description">Book a flight for someone anywhere in the world. We'll handle everything, and they'll arrive in 2–3 days.</div>
+
+<!-- Add your previously uploaded images here -->
+<img src="https://i.postimg.cc/BZdZJVW5/c07b1929b0d2a15a7b08e1916370173b.jpg" alt="Driving Car">
+<img src="https://i.postimg.cc/L6pXzby9/3353e1f468bc262e1bbf585950327367-1.jpg" alt="Flying Plane">
+
+<div class="button-section">
+  <a href="mailto:flyconnectglobal@gmail.com?subject=Flight Booking Request&body=Name%3A%20%0ADestination%3A%20%0ADate%3A%20%0APhone%3A%20%0AOther%20Details%3A">Book Now</a>
+  <a href="visa.html">Visa & FAQs</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+  </section>  <img src="https://i.postimg.cc/cJZNrpTY/1753034455282.jpg" class="moving-plane" alt="Flying Plane">
+  <img src="https://i.postimg.cc/jdc6Cf0q/1753034668262.jpg" class="moving-car" alt="Driving Car">  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa & FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="about.html">About</a>
+    </div>
+    <p>&copy; FlyConnect Global. All rights reserved. | Designed with vision for worldwide convenience.</p>
+  </footer><button class="translate-button" onclick="window.open('https://translate.google.com/translate?hl=&sl=auto&tl=en&u='+window.location.href, '_blank')">Translate</button>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+  </script></body>
+</html>

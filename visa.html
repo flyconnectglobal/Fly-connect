@@ -1,0 +1,143 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Visa & FAQs - FlyConnect Global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9ff, #eef6ff);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #002244, #003366);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-toggle {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #002a66;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+      }
+      nav.show {
+        display: flex;
+      }
+    }
+    section {
+      max-width: 1000px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #002244;
+      margin-top: 30px;
+    }
+    .faq {
+      margin-bottom: 30px;
+    }
+    .faq h3 {
+      color: #003366;
+    }
+    .faq p {
+      margin-left: 15px;
+    }
+    footer {
+      background: #002a66;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Visa Information & Frequently Asked Questions</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa & FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>  <section>
+    <h2>Visa Support & Assistance</h2>
+    <p>FlyConnect Global makes your international travel seamless. Our visa processing service ensures that your loved ones obtain the required travel documents easily and quickly.</p><h3>Our Visa Services Include:</h3>
+<ul>
+  <li>Tourist Visa Application Support</li>
+  <li>Emergency Travel Visa Processing</li>
+  <li>Visa Extension Services</li>
+  <li>Documentation Guidance & Embassy Appointments</li>
+</ul>
+
+<div class="faq">
+  <h2>FAQs</h2>
+  <h3>1. How long does it take to process a visa?</h3>
+  <p>Visa processing typically takes 2–5 business days depending on the destination and applicant’s nationality.</p>
+
+  <h3>2. What documents are needed?</h3>
+  <p>A valid passport, invitation letter (if any), passport photo, and travel itinerary. Additional documents may be requested based on the country.</p>
+
+  <h3>3. Can I book a visa without booking a flight?</h3>
+  <p>Yes, we offer standalone visa processing as well as flight + visa packages.</p>
+
+  <h3>4. Do you provide visa support for all countries?</h3>
+  <p>We provide support for most countries across Europe, North America, Asia, and Africa. Contact us to confirm for specific countries.</p>
+</div>
+
+<div class="button-section" style="text-align: center;">
+  <a href="mailto:flyconnectglobal@gmail.com?subject=Visa Support Request&body=Full%20Name%3A%0ACountry%20of%20Destination%3A%0APurpose%20of%20Visit%3A%0AExpected%20Travel%20Date%3A">Request Visa Support</a>
+</div>
+
+  </section>  <footer>
+    &copy; FlyConnect Global. All rights reserved. | Visa Assistance & Travel Made Easy.
+  </footer>  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+  </script></body>
+</html>

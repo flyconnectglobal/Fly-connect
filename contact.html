@@ -1,0 +1,125 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - FlyConnect Global</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #f9f9ff, #eef6ff);
+      color: #222;
+    }
+    header {
+      background: linear-gradient(to right, #002244, #003366);
+      color: white;
+      padding: 60px 20px 40px;
+      text-align: center;
+      position: relative;
+    }
+    .menu-toggle {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 28px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+      display: none;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 16px;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+      nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background: #002a66;
+        padding: 20px;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+      }
+      nav.show {
+        display: flex;
+      }
+    }
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+    h2 {
+      color: #002244;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .contact-methods {
+      margin-top: 30px;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .contact-methods p {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+    footer {
+      background: #002a66;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 15px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact FlyConnect Global</h1>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    <nav id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="visa.html">Visa & FAQs</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="testimonials.html">Testimonials</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>  <section>
+    <h2>We’re here to help!</h2>
+    <div class="contact-methods">
+      <p><strong>Email:</strong> <a href="mailto:flyconnectglobal@gmail.com">flyconnectglobal@gmail.com</a></p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/+18012345678">+1801 234 5678</a></p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/flyconnectglobal" target="_blank">@flyconnectglobal</a></p>
+      <p><strong>Office Address:</strong> 67 Skyway Avenue, New York, United States</p>
+    </div>
+  </section>  <footer>
+    &copy; FlyConnect Global. All rights reserved. | Connecting You to the World.
+  </footer>  <script>
+    function toggleMenu() {
+      document.getElementById("navMenu").classList.toggle("show");
+    }
+  </script></body>
+</html>
